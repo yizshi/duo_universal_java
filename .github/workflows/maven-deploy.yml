@@ -18,7 +18,7 @@ jobs:
       run: mvn -B package
 
     - name: Generate sbom output
-      run: mvn org.cyclonedx:cyclonedx-maven-plugin:makeBom && mv ./duo-client/target/cyclonedx-sbom.json ./cyclonedx-sbom.json
+      run: mvn org.cyclonedx:cyclonedx-maven-plugin:makeBom && mv ./duo-universal-sdk/target/cyclonedx-sbom.json ./cyclonedx-sbom.json
 
     - name: Convert SBOM
       uses: duosecurity/duo_client_python/.github/actions/sbom-convert@master
