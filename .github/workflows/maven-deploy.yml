@@ -26,7 +26,7 @@ jobs:
     - name: Archive SBOM artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: duo_client_java_sbom
+        name: duo_universal_java_sbom
         path: spdx.json
 
     # - name: Set up Apache Maven Central
